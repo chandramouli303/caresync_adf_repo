@@ -1,5 +1,5 @@
 {
-	"name": "PostgreIngestion",
+	"name": "TestIngestion",
 	"properties": {
 		"activities": [
 			{
