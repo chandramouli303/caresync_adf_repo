@@ -48,9 +48,10 @@
 						"value": "@activity('Read Source Tables List').output.value",
 						"type": "Expression"
 					},
+					"isSequential": false,
 					"activities": [
 						{
-							"name": "Execute Pipeline1",
+							"name": "Ingest from source to silver",
 							"type": "ExecutePipeline",
 							"dependsOn": [
 								{
@@ -112,7 +113,7 @@
 							"type": "Script",
 							"dependsOn": [
 								{
-									"activity": "Execute Pipeline1",
+									"activity": "Ingest from source to silver",
 									"dependencyConditions": [
 										"Failed"
 									]
